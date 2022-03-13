@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang=cn>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hutao</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        img {
+            position: absolute;
+        }
+        .hutao {
+            width: 800px;
+            height: 800px;
+            position: relative;
+            margin: 0 auto;
+        }
+        .eyes {
+            left: 98px;
+            top: 390px;
+        }
+        .eyelid {
+            left: 98px;
+            top: 289px;
+            animation: wink .6s infinite alternate
+        }
+        .left {
+            left: 179px;
+            top: 717px;
+        }
+        .right {
+            left: 540px;
+            top: 727px;
+        }
+        .shoulder {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            animation: spin .6s infinite;
+        }
+        .arm {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            transform-origin: right bottom;
+            animation: spin-reverse .6s infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(1turn);
+            }
+        }
+        
+        @keyframes spin-reverse  {
+            to {
+                transform: rotate(1turn);
+            }
+        }
+
+        @keyframes wink {
+            from {
+                top:289px
+            }
+
+            to{
+                top: 372px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2 align="center">如果手臂摆动动作不正常请刷新页面 html特性</h2>
+    <div class="hutao">
+        <img src="./eyes.png" alt="" class="eyes">
+        <img src="./eyelid.png" alt="" class="eyelid">
+        <img src="./head.png"  alt="" class="head">
+        <div class="left shoulder">
+            <img src="./left.png" alt="" class="arm">
+        </div>
+        <div class="right shoulder">
+            <img src="right.png" alt="" class="arm">
+
+        </div>
+        </div>
+    </body>
+</html>

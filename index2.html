@@ -1,0 +1,56 @@
+    <!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>zyb的站新版 [测试版]</title>
+</head>
+<script type="text/javascript">
+    alert('zyb的站 新版 请输入密码')
+    function password() {   
+    var testV = 1;   
+    var pass1 = prompt('Enter your Password here','');   
+    while (testV < 99999999) {   
+    if (!pass1)   
+    history.go(-1);   
+    if (pass1 == "114514rnm") {//set password
+    alert('Login Successful!');   
+    break;   
+    }   
+    testV+=1;   
+    var pass1 =   
+    prompt('Password Wrong!');   
+    }   
+    if (pass1!="password" & testV ==3)   
+    history.go(-1);   
+    return " ";   
+    }   
+    document.write(password());   
+    </script>
+    <!--    //--password系统-->
+<!--如果你进来了 说明你就是知道密码的内部人员-->
+<!--哈哈-->
+<body>
+    <html>
+        <body bgcolor="lightyellow"></body>
+        <h1 align="center" style="color:cyan">新版站点</h1>
+        <h2 align="center" style="color:black">仍在开发</h2>
+        <center>
+        <img src="/ps/cute.all.jpg" width="500" onclick="window.location.href ='/ps/yz.jpg'">
+        <h6></h6>
+        <button onclick="window.location.href = '/ps'">弔图主页</button>
+        <button onclick="window.location.href = '/hty'">胡桃摇</button>
+        <button onclick="window.location.href = '/xxs'">小学生</button>
+        <button onclick="window.location.href = '/files/videos'">Videos</button>
+        <h4></h4>
+        <button onclick="window.location.href = '/work/py/1.py'">1.py</button>
+        <button onclick="window.location.href = '/work/py/2.py'">2.py</button>
+        <button onclick="window.location.href = '/work/py/3.py'">3.py</button>
+        <button onclick="window.location.href = '/work/py/4.py'">4.py</button>
+        <h4></h4>
+        <button onclick="window.location.href = '/bilibili/never.html'">鸡屎遗照</button>
+        <h6></h6>
+        <button onclick="window.location.href = '/'">回到旧版</button>
+        <button onclick="window.location.href = 'http://192.168.5.150/'">信息教育平台</button>
+        <button onclick="window.location.href = '/updates.html'">更新日志</button>
+        </center>
+    </html>
+</body>
