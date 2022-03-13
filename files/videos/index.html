@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>zyb的站 Video</title>
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+    <!--接下来password-->
+    <script type="text/javascript">
+        alert('zyb的站点/files/videos 请输入密码')
+        function password() {   
+        var testV = 1;   
+        var pass1 = prompt('Enter your Password here','');   
+        while (testV < 99999999) {   
+        if (!pass1)   
+        history.go(-1);   
+        if (pass1 == "114514rnm") {//初始密码123   
+        alert('Login Successful!');   
+        break;   
+        }   
+        testV+=1;   
+        var pass1 =   
+        prompt('Password Wrong!');   
+        }   
+        if (pass1!="password" & testV ==3)   
+        history.go(-1);   
+        return " ";   
+        }   
+        document.write(password());   
+        </script>
+        <!--password系统-->
+</head>
+<html>
+    <body bgcolor="lightblue">
+        <center>
+            <video width="360" height="640" controls autoplay>
+                <source src="cyy.rocket.mp4" type="video/mp4">
+                </object>
+                </video>
+            <h2>cyy早期制造火箭</h2>
+            <video width="360" height="640" controls autoplay>
+                <source src="cyy.dogfollow.mp4" type="video/mp4">
+                </object>
+                </video>
+            <h2 style="color:darkblue">cyy回家路上被狗追</h2>
+            </center>
+    </body>
+</html>
