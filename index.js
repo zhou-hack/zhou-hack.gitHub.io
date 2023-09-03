@@ -7,3 +7,7 @@ function redirectToGithub() {
     window.location.href = "https://github.com/zhou-hack"
 }
 //Non-Used 开Github
+
+function redirectToTwitter() {
+    window.location.href = "https://twitter.com/zybher3"
+}
