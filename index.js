@@ -7,7 +7,3 @@ function redirectToGithub() {
     window.location.href = "https://github.com/zhou-hack"
 }
 //h1 title 开Github
-
-function redirectToPages() {
-    window.location.href = "https://zhou-hack-github-io.pages.dev"
-}
