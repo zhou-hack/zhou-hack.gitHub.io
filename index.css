@@ -1,7 +1,11 @@
 body {
-    position: relative;
-    height: 100vh;
-    background-color: #e0e0e0; /* 高级灰色 */
+    background-image: url(/background.png);
+    background-position: center center;
+    background-size:100% 100%;
+    background-attachment:fixed;
+    background-size: cover;
+    background-color: #464646;
+    margin:0px;
 }
 
 .container {
@@ -44,6 +48,16 @@ body {
     }
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* 与 "her3" 位置的字体相同 */
     font-weight: bold; /* 加粗 */
+    margin-bottom: 0;
+}
+
+.welcome-text-subtitle {
+    font-size: 30px; /* 更大的字号 */
+    @media (max-width: 435px) {
+        font-size: 30px !important; /* 在小屏幕上减小字号 */
+    }
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* 与 "her3" 位置的字体相同 */
+
 }
 
 @keyframes fade-in {
@@ -55,29 +69,4 @@ body {
         opacity: 1;
         transform: translate(-50%, -50%); /* 终点位置 -50%水平居中，-50%垂直居中 */
     }
-}
-
-.social-buttons {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.social-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    background-color: #007BFF; /* 按钮背景颜色 */
-    color: #fff; /* 按钮文字颜色 */
-    text-decoration: none; /* 去除下划线 */
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* 添加过渡效果 */
-    width: 100px; /* 按钮宽度 */
-    height: 40px; /* 按钮高度 */
-    }
-
-.social-button:hover {
-    background-color: #0056b3; /* 按钮背景颜色（悬停状态） */
 }
