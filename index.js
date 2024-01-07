@@ -8,7 +8,6 @@ function redirectToGithub() {
 }
 //h1 title 开Github
 
-// function redirectToTwitter() {
-//     window.location.href = "https://twitter.com/zybher3"
-// }
-// //noneed
+function redirectToPages() {
+    window.location.href = "https://zhou-hack-github-io.pages.dev"
+}

@@ -1,0 +1,40 @@
+body {
+    background-position: center center;
+    background-size:100% 100%;
+    background-attachment:fixed;
+    background-size: cover;
+    background-color: #f0f0f0;
+    margin:0px;
+}
+
+
+.animation-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始时文本不可见 */
+    animation: fade-in 1.5s ease-in-out forwards; /* 渐入动画 */
+}
+
+.welcome-text {
+    font-size: 40px; /* 更大的字号 */
+    @media (max-width: 768px) {
+        font-size: 40px !important; /* 在小屏幕上减小字号 */
+    }
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* 与 "her3" 位置的字体相同 */
+    font-weight: bold; /* 加粗 */
+    margin-bottom: 0;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%); /* 初始位置 -50%水平居中，-60%垂直偏上 */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%); /* 终点位置 -50%水平居中，-50%垂直居中 */
+    }
+}
