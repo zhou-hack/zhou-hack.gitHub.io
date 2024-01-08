@@ -9,33 +9,41 @@ body {
 }
 
 .container {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .htmlhead {
-    font-size: xx-large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-right: auto;
-    margin-left: 20px;
+  font-size: xx-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-right: auto;
+  margin-left: 30px;
+  left: 30px;
+  position: relative;
 }
 
 .head {
-    cursor: pointer;
-    border-radius: 50%; /* 添加圆角 */
-    margin-left: auto;
-    margin-right: 20px;
+  cursor: pointer;
+  border-radius: 50%; /* 添加圆角 */
+  margin-left: auto;
+  margin-right: 20px;
+  position: absolute;
+  top: 15px;
+  left: 0;
 }
+
 
 .animation-container {
     position: absolute;
     top: 50%;
     left: 50%;
+    border-radius: 10px;
+    z-index: 10;
     transform: translate(-50%, -50%);
     opacity: 0; /* 初始时文本不可见 */
     animation: fade-in 1.5s ease-in-out forwards; /* 渐入动画 */
@@ -70,3 +78,4 @@ body {
         transform: translate(-50%, -50%); /* 终点位置 -50%水平居中，-50%垂直居中 */
     }
 }
+
