@@ -62,7 +62,7 @@ body {
 .welcome-text-subtitle {
     font-size: 30px; /* 更大的字号 */
     @media (max-width: 435px) {
-        font-size: 30px !important; /* 在小屏幕上减小字号 */
+        font-size: 20px !important; /* 在小屏幕上减小字号 */
     }
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* 与 "her3" 位置的字体相同 */
 
@@ -79,3 +79,14 @@ body {
     }
 }
 
+.codeRepoIcon {
+    position: relative;
+    top: 30px;
+    margin-left: 97%;
+    right: 20px;
+}
+
+.RepoIcon {
+    position: relative;
+    right: 20px;
+}
