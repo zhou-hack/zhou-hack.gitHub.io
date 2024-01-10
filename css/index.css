@@ -1,81 +1,110 @@
 body {
     background-image: url(/image/background.png);
     background-position: center center;
-    background-size:100% 100%;
-    background-attachment:fixed;
+    background-size: 100% 100%;
+    background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
-    margin:0px;
+    margin: 0px;
 }
 
 .container {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  right: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .htmlhead {
-  font-size: xx-large;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-right: auto;
-  margin-left: 30px;
-  left: 30px;
-  position: relative;
+    cursor: pointer;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: auto;
+    margin-left: 30px;
+    left: 30px;
+    position: relative;
 }
 
 .head {
-  cursor: pointer;
-  border-radius: 50%; /* 添加圆角 */
-  margin-left: auto;
-  margin-right: 20px;
-  position: absolute;
-  top: 15px;
-  left: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    /* 添加圆角 */
+    margin-left: auto;
+    margin-right: 20px;
+    position: absolute;
+    top: 15px;
+    left: 0;
 }
 
 
 .animation-container {
+    cursor: default;
     position: absolute;
     top: 50%;
     left: 50%;
     border-radius: 10px;
     z-index: 10;
     transform: translate(-50%, -50%);
-    opacity: 0; /* 初始时文本不可见 */
-    animation: fade-in 1.5s ease-in-out forwards; /* 渐入动画 */
+    opacity: 0;
+    /* 初始时文本不可见 */
+    animation: fade-in 2.0s ease-in-out forwards;
+    /* 渐入动画 */
 }
 
 .welcome-text {
-    font-size: 80px; /* 更大的字号 */
+    font-size: 80px;
+
+    /* 更大的字号 */
     @media (max-width: 768px) {
-        font-size: 40px !important; /* 在小屏幕上减小字号 */
+        font-size: 40px !important;
+        /* 在小屏幕上减小字号 */
     }
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* 与 "her3" 位置的字体相同 */
-    font-weight: bold; /* 加粗 */
+
+    font-family: 'Trebuchet MS',
+    'Lucida Sans Unicode',
+    'Lucida Grande',
+    'Lucida Sans',
+    Arial,
+    sans-serif;
+    /* 与 "her3" 位置的字体相同 */
+    font-weight: bold;
+    /* 加粗 */
     margin-bottom: 0;
 }
 
 .welcome-text-subtitle {
-    font-size: 30px; /* 更大的字号 */
+    font-size: 30px;
+
+    /* 更大的字号 */
     @media (max-width: 435px) {
-        font-size: 20px !important; /* 在小屏幕上减小字号 */
+        font-size: 20px !important;
+        /* 在小屏幕上减小字号 */
     }
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* 与 "her3" 位置的字体相同 */
+
+    font-family: 'Trebuchet MS',
+    'Lucida Sans Unicode',
+    'Lucida Grande',
+    'Lucida Sans',
+    Arial,
+    sans-serif;
+    /* 与 "her3" 位置的字体相同 */
 
 }
 
 @keyframes fade-in {
     0% {
         opacity: 0;
-        transform: translate(-50%, -60%); /* 初始位置 -50%水平居中，-60%垂直偏上 */
+        transform: translate(-50%, -60%);
+        /* 初始位置 -50%水平居中，-60%垂直偏上 */
     }
+
     100% {
         opacity: 1;
-        transform: translate(-50%, -50%); /* 终点位置 -50%水平居中，-50%垂直居中 */
+        transform: translate(-50%, -50%);
+        /* 终点位置 -50%水平居中，-50%垂直居中 */
     }
 }
 
@@ -86,14 +115,17 @@ body {
     right: 20px;
 }
 
-.RepoIcon {
+.codeRepoDesc {
+    cursor: pointer;
     position: relative;
-    right: 20px;
+    right: 70px;
+    top: -15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.codeRepoDesc {
-    position: absolute;
-    right: 15px;
-    top: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.RepoIcon {
+    cursor: pointer;
+    position: relative;
+    top: -65px;
+    width: 40px;
 }
