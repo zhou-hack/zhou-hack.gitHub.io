@@ -90,3 +90,10 @@ body {
     position: relative;
     right: 20px;
 }
+
+.codeRepoDesc {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
