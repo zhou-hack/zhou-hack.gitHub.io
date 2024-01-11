@@ -39,7 +39,6 @@ body {
     left: 0;
 }
 
-
 .animation-container {
     cursor: default;
     position: absolute;
@@ -128,4 +127,112 @@ body {
     position: relative;
     top: -65px;
     width: 40px;
+}
+
+.biliIcon {
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;  /* 调整这个值来改变元素距离底部的距离 */
+    left: 40%;  /* 将元素的左边界设置在屏幕的中间 */
+    transform: translateX(-50%);  /* 将元素向左移动自身宽度的一半，以确保元素的中心与屏幕的中心对齐 */
+    width: 30px;
+    z-index: 1; /* 添加一个较小的 z-index 值，使其位于另一个元素之上 */
+}
+
+.githubIcon {
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;  /* 调整这个值来改变元素距离底部的距离 */
+    right: 40%;  /* 将元素的右边界设置在屏幕的中间 */
+    transform: translateX(50%);  /* 将元素向右移动自身宽度的一半，以确保元素的中心与屏幕的中心对齐 */
+    width: 30px;
+    z-index: 1; /* 添加一个较小的 z-index 值，使其位于另一个元素之上 */
+}
+
+.footer-text {
+    cursor: default;
+    position: fixed;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* BEGIN: Responsive Styles */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .htmlhead {
+        margin-left: 10px;
+    }
+
+    .head {
+        top: 10px;
+        right: 0;
+        left: auto;
+        margin-right: 10px;
+    }
+
+    .animation-container {
+        top: 40%;
+    }
+
+    .welcome-text {
+        font-size: 40px !important;
+    }
+
+    .welcome-text-subtitle {
+        font-size: 20px !important;
+    }
+
+    .codeRepoIcon {
+        margin-left: 90%;
+    }
+
+    .codeRepoDesc {
+        right: 20px;
+        top: -5px;
+    }
+
+    .RepoIcon {
+        top: -55px;
+    }
+
+    .biliIcon {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .githubIcon {
+        bottom: 20px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .footer-text {
+        bottom: -25px;
+    }
+}
+
+@media (max-width: 435px) {
+    .welcome-text {
+        font-size: 30px !important;
+    }
+
+    .welcome-text-subtitle {
+        font-size: 15px !important;
+    }
+}
+
+/* END: Responsive Styles */
+
+
+.animation-container {
+    background: rgba(255, 255, 255, 0.5);  /* 半透明的白色背景 */
 }
