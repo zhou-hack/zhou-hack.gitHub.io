@@ -5,7 +5,7 @@ function redirectToPages() {
 
 function redirectToGachaPicker() {
     console.log("Jump to GachaPicker");
-    window.location.href = "https://itukuai.top:8911/"
+    window.location.href = "http://itukuai.top:8911/"
 }
 
 // function redirectToGachaPicker_Pages() {
