@@ -1,6 +1,6 @@
 function redirectToPages() {
     console.log("Jump to Pages");
-    window.location.href = "https://her3.asia/"
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 }
 
 function redirectToGachaPicker() {
