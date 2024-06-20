@@ -13,5 +13,5 @@ function redirectToGachaPicker() {
 //     window.location.href = "https://gp.her3.asia/"
 // }
  
-var delayTime = 2000; // 2秒
+var delayTime = 2; // 2秒
  
