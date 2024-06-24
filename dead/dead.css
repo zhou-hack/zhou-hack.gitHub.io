@@ -1,0 +1,55 @@
+.h1title {
+    width: 50%; /* 设置元素的宽度 */
+    margin: 0 auto; /* 水平居中 */
+    text-align: center; /* 如果需要文本也居中 */
+}
+
+.h2title {
+    width: 50%; /* 设置元素的宽度 */
+    margin: 0 auto; /* 水平居中 */
+    text-align: center; /* 如果需要文本也居中 */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    height: 100vh; /* 可选，仅用于示例效果 */   
+}
+
+
+/* 照片轮换 */
+.carousel {
+    position: relative;
+    width: 300px;
+    height: 700px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    transition: transform 1s, opacity 1s;
+    transform-origin: center center;
+}
+
+.carousel img.active {
+    left: 0;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.carousel img.prev, .carousel img.next {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.carousel img.prev {
+    left: -100%;
+}
+
+.carousel img.next {
+    left: 100%;
+}
